@@ -1,11 +1,9 @@
 <?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+
 use DevCoder\DotEnv;
 $absolutePathToEnvFile = __DIR__ . '/.env';
 (new DotEnv($absolutePathToEnvFile))->load();
-
-defined('BASEPATH') OR exit('No direct script access allowed');
-
-
 // $host = "localhost";
 // $databaseuser = "rdm";
 // $databasename = "rdm";
